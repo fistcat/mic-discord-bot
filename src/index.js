@@ -27,7 +27,6 @@ const client = new Client({
     });
     client.login(process.env.TOKEN);
   } catch (error) {
-    console.log(process.env.MONGODB_URI);
     console.log(`Error: ${error}`);
   }
 })();

@@ -7,7 +7,7 @@ module.exports = {
   run: ({ client, interaction }) => {
     console.log(interaction.member);
     interaction.reply(
-      `${interaction.client.user.displayName}:点数结果-> ${
+      `${interaction.member.user}:点数结果-> ${
         2 + Math.floor(Math.random() * 6) + Math.floor(Math.random() * 6)
       }`
     );

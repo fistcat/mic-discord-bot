@@ -4,8 +4,9 @@ module.exports = {
     description: "Pong!",
   },
 
-  run: ({ interaction, client, handler }) => {
+  run: ({ interaction, client, handler, commandObj }) => {
     interaction.reply(`:ping_pong: Pong! ${client.ws.ping}ms`);
+    console.log(interaction);
   },
 
   options: {
